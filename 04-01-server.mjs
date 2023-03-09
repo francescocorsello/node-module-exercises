@@ -1,3 +1,9 @@
+// Our HTTP server sends an HTML response body.
+
+// Replace the text in the HTML with your own message.
+
+// Run the server and use your web browser to test your changes.
+
 import { createServer } from "node:http";
 
 const server = createServer((request, response) => {
@@ -8,7 +14,7 @@ const server = createServer((request, response) => {
   response.setHeader("Content-Type", "text/html");
 
   response.end(
-    "<html><body><h1>This page was served with Node.js!</h1></body></html>"
+    "<html><body><h1>Ciao Alessandro, l'orto ti aspetta!!</h1></body></html>"
   );
 });
 
